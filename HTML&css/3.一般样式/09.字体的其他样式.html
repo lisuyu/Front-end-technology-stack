@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#d1{
+				color: red;
+				font-size: 30px;
+				font-family: "微软雅黑";
+				/* 
+				font-style可以用来设置文字的斜体
+				可选值：
+					normal，默认，文字正常显示
+					italic:斜体
+					bolique 文字倾斜
+					
+				大部分浏览器不会对倾斜和斜体做区分
+				 */
+				font-style: oblique;
+				
+				/* 设置文本加粗效果
+					可选值：
+						normal
+						bold:加粗显示
+						
+					设置：100-900的值，往往用不上，
+						因为用户电脑中不会有这么多级别的字体
+				 */
+				font-weight: 900;
+				
+				/* 
+				设置小型大写字母
+				可选值
+					normal
+					small-caps
+				将所有字母都以大写字母显示，
+				但是小写字母的大写，要比大写字母的大写要小一些
+				 */
+				font-variant: small-caps;
+				/* 
+				 在CSS中，为我们提供了一个样式叫做：font
+				 该样式可以设置字体相关的所有样式
+				 没有顺序要求
+				 但最后两项必须是 大小+字体
+				 */
+			}
+			
+			.box{
+				color: #00008B;
+				font:italic bold small-caps 30px "微软雅黑";
+				background-color: #AABBCC;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="d1">一段文字，abcdef</p>
+		<p class="box">一段文字，abcdef</p>
+	</body>
+</html>

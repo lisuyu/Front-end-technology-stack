@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.p1{
+				/* 
+				text-transform可以用来设置文本的大小写
+				可选值：
+				none：默认
+				capitalize 单词的首字母大写，通过空格来识别单词
+				
+				uppercase 所有字母都大写
+				
+				lowercase 所有字母都小写
+				 */
+				text-transform: lowercase;
+			}
+			
+			.p2{
+			/* text-decoration可以用来设置文本的修饰
+			none：默认值
+			underline：下划线
+			overline：上划线
+			line-through：删除线
+				 */
+			/* text-decoration: line-through; */
+			text-decoration: overline;
+			}
+			a{
+			/*
+			超链接会默认添加下划线，也就是超链接的text-decoration
+			的默认值是underline
+			如果需要除去超链接的下划线则需要将该样式设置为none
+			 */
+			text-decoration: none;
+			}
+			
+			.p3{
+			/* letter-spacing可以指定字符间距 */
+			letter-spacing: 3px;
+			/* word-spacing可以设置单词之间的距离
+			 实际上就是设置词与词之间空格的大小*/
+			 word-spacing: 20px;
+			}
+			
+			.p4{
+			/* text-align用于设置文本的对齐方式
+			可选值：left 默认值
+			right
+			center
+			justify：两端对齐
+			通过调整文本之间的空格的大小，
+			来达到一个两端对齐的效果
+			 */
+			text-align: justify;
+			}
+			
+			.p5{
+				font-size: 20px;
+				/* text-indent用来设置首行缩进
+				 当给它指定一个正值时，会自动向右缩进指定的像素
+				 如果为它指定一个负值，则会向左移动指定的像素
+				 通过这种方式可以将一些不想显示的文字隐藏起来
+				 这个值一般都会使用em作为单位*/
+				text-indent: -12px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<p class="p1">
+			THIE IS A P TAG.I LOVE YOU THREE THOUSANDS.
+		</p>
+		<p class="p2">
+		THIE IS A P TAG.I LOVE YOU THREE THOUSANDS.
+		</p>
+		<a href="#">this is a hyperlink!</a>
+		<p class="p3">
+			THIE IS A P TAG.I LOVE YOU THREE THOUSANDS.
+		</p>
+		<p class="p4">
+		I am iron-man,I love you three threesands.
+		</p>
+		<p class="p5">
+		I am iron-man,I love you three threesands.
+		</p>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				font-size: 20px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			继承：
+			在css中，祖先元素上的样式，会被后代元素所继承
+			利用继承可以将基础样式设置给祖先元素
+			
+			并不是所有样式都会被继承，例如：背景颜色
+			实际中看起来继承了，但实际上是因为透明性导致的
+			
+			通过继承性，透明性分析
+		 -->
+		 
+		 <p>
+			 p标签
+			 <!-- 透明性导致继承了背景颜色 -->
+			 <span>p标签中的span</span>
+		 </p>
+		 <p>
+			 p标签
+		 </p>
+		 <span>
+			 span标签
+		 </span>
+	</body>
+</html>

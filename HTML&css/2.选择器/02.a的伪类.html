@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+			a的伪类优先级相同
+			 */
+			a:link{
+				color: blue;
+			}
+			
+			a:visited{
+				color:red;
+			}
+			
+			/* hover不能写到active下面，否则active会失效
+			 link，visited也不能下载hover和active下面
+			 一般的顺序：
+			 link
+			 
+			 visited
+			 
+			 hover
+			 
+			 active
+			 */
+			
+			/* 鼠标移入 */
+			a:hover{
+				color: green;
+			}
+			/* 点击 */
+			a:active{
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<a href="https://www.baidu.com">一个链接</a><br>
+		<a href="#">一个链接</a><br>
+		<a href="#">一个链接</a><br>
+		<a href="#">一个链接</a><br>
+		<a href="#">一个链接</a><br>
+	</body>
+</html>
