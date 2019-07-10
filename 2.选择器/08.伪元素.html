@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 使用伪元素来表现元素中的特殊位置
+			 首字母
+			 :first-letter
+			 
+			 首行
+			 :first-line
+			 
+			 该元素最前面
+			 :before
+			 */
+			p:first-letter{
+				color: #FF0000;
+			}
+			
+			/* 一般before都需要结合content样式一起使用
+			 通过content可以向before和after的位置添加一些内容
+			 通过css添加的内容不会被选中*/
+			p:before{
+				background-color: yellow;
+				content:"我会出现在段落最前面";
+			}
+			
+			p:after{
+				color: #FF0000;
+				content: "我会出现在最后面";
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			一个段落
+		</p>
+	</body>
+</html>
